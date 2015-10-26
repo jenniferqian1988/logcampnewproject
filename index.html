@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<link rel="stylesheet" href="questions.css" media="screen" title="no title" charset="utf-8">-->
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src = "logcamp.js"></script>
+    
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <!--<a href="signup.html"><button type="button" name="Sign Up">signup</button></a>-->
+    </header>
+    
+    <div id="before">
+      <div>
+        <label for ="firstName">First Name:</label>
+        <input type = "text" id=fn name="firstName" value="">
+      </div>
+      <div>
+        <label for ="lastName">Last Name:</label>
+        <input type = "text" id=ln name="lastName" value="">
+      </div>
+      <div>
+        <label for ="age">Age:</label>
+        <input type = "number" id=ag name="age" value="">
+      </div>
+      <div>
+        <label for ="location">Current Neighborhoold:</label><br>
+        <input type = "radio" id=nei1 name="neighbor" value="Southwest"> Southwest <br>
+        <input type = "radio" id=nei2 name="neighbor" value="Southeast"> Southeast <br>
+        <input type = "radio" id=nei3 name="neighbor" value="North"> North <br>
+        <input type = "radio" id=nei4 name="neighbor" value="Northeast"> Northeast <br>
+        <input type = "radio" id=nei5 name="neighbor" value="Northwest"> Northwest <br>
+      </div>
+      <div>
+        <input type = "button" name="Submit" value="Submit" onclick="usersSubmit()"></input>
+      </div>
+    </div>
+    
+    <div id="after">
+      <p id=ty>Your data has been successfully collected. Thank you for your help!</p>
+      <form>
+        <input type=button value="start a new entry" onclick="window.location.reload()">
+      </form>
+    </div>
+    
+  </body>
+</html>
