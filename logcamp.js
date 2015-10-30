@@ -1,3 +1,7 @@
+// IFFE - Maintain a clean global scope
+(function(){
+  'use strict';
+
 var firebaseDB = new Firebase ('https://logcampoct2015.firebaseio.com');
 var neighborhoodData = firebaseDB.child('categories');
 var neighborhoodDataCate1 = neighborhoodData.child('southWest');
@@ -84,3 +88,5 @@ document.getElementById('after').style.visibility='visible';
 document.getElementById('before').style.visibility='hidden';
 
 }
+
+}());
