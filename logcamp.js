@@ -50,32 +50,32 @@ function usersSubmit() {
 
 
 // var question = prompt('what neighborhood do you live in?');
-var catergoryChoice;
+var categoryChoice;
 
 switch(neighborHood) {
   case 'Southwest':
-    catergoryChoice = 'southWest';
+    categoryChoice = 'southWest';
     neighborhoodDataCate1.push(user);
     console.log(categoryChoice);
     break;
   case 'Northwest':
-    catergoryChoice = 'northWest';
+    categoryChoice = 'northWest';
     neighborhoodDataCate2.push(user);
-    console.log(catergoryChoice);
+    console.log(categoryChoice);
     break;
   case 'North':
-    catergoryChoice = 'north';
-    console.log(catergoryChoice);
+    categoryChoice = 'north';
+    console.log(categoryChoice);
     neighborhoodDataCate3.push(user);
     break;
   case 'Northeast':
-    catergoryChoice = 'northEast';
-    console.log(catergoryChoice);
+    categoryChoice = 'northEast';
+    console.log(categoryChoice);
     neighborhoodDataCate4.push(user);
     break;
   case 'Southeast':
-    catergoryChoice = 'southEast';
-    console.log(catergoryChoice);
+    categoryChoice = 'southEast';
+    console.log(categoryChoice);
     neighborhoodDataCate5.push(user);
     break;
   default:
