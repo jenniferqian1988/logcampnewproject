@@ -52,7 +52,7 @@ switch(neighborHood) {
   case 'Southwest':
     catergoryChoice = 'southWest';
     neighborhoodDataCate1.push(user);
-    
+    console.log(categoryChoice);
     break;
   case 'Northwest':
     catergoryChoice = 'northWest';
